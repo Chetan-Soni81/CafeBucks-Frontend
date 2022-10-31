@@ -1,0 +1,29 @@
+footer {
+    color: #fff;
+    background: #45526e;
+}
+
+.footer__col a {
+    color: #fff;
+}
+
+.footer__col {
+    margin: 16px auto 0rem !important;
+}
+
+.footer__col h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.footer__col a:hover {
+    /* text-decoration: none; */
+    color: #fff;
+}
+
+@media only screen and (max-width: 992px) {
+    footer {
+        text-align: center;
+    }
+}
