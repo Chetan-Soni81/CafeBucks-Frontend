@@ -52,6 +52,7 @@
     font-size: 1.2rem;
     margin-top: 2rem;
     width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .search__box {
@@ -109,7 +110,12 @@
 }
 
 .card {
+    margin-bottom: 1rem;
     width: 18rem;
+}
+
+.card:hover {
+    box-shadow: 0 0 6px rgba(35, 173, 278, 1);
 }
 
 .card image {
@@ -120,11 +126,11 @@
 .card__repeater {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 768px) {
-    .search__option{
+    .search__option {
         padding: 0 1rem;
     }
 
@@ -146,14 +152,12 @@
         width: 100%;
         padding: 1rem;
     }
-    
+
     .search__divider {
         display: none;
     }
-    
-    .search__divider
-    
-    .search__text input {
+
+    .search__divider .search__text input {
         box-sizing: border-box;
         padding: 0 1rem;
 
@@ -165,5 +169,10 @@
 
     .home__content p {
         font-size: 2rem;
+    }
+
+    .search_v_divider {
+        display: block;
+        margin-top: 1rem;
     }
 }

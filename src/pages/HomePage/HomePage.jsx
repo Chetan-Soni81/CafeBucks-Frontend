@@ -12,6 +12,7 @@ import { FaCaretDown } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 
 const HomePage = () => {
+  document.title = 'CaféBucks - Home'
   return (
     <div className='home__main'>
       <div className="home__panel">
@@ -50,7 +51,7 @@ const HomePage = () => {
           <div className="card-body">
             <h5 className="card-title">Order Food</h5>
             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" className="btn btn-primary">Go somewhere</a>
+            <a href="/" className="btn btn-primary">Go somewhere</a>
           </div>
         </motion.div>
 
@@ -59,7 +60,7 @@ const HomePage = () => {
           <div className="card-body">
             <h5 className="card-title">Check Restaurants</h5>
             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" className="btn btn-primary">Go somewhere</a>
+            <a href="/" className="btn btn-primary">Go somewhere</a>
           </div>
         </motion.div>
 
@@ -68,7 +69,7 @@ const HomePage = () => {
           <div className="card-body">
             <h5 className="card-title">Explore Cuisines</h5>
             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" className="btn btn-primary">Go somewhere</a>
+            <a href="/" className="btn btn-primary">Go somewhere</a>
           </div>
         </motion.div>
 
@@ -77,7 +78,7 @@ const HomePage = () => {
           <div className="card-body">
             <h5 className="card-title">Hot Deals</h5>
             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" className="btn btn-primary">Go somewhere</a>
+            <a href="/" className="btn btn-primary">Go somewhere</a>
           </div>
         </motion.div>
       </div>

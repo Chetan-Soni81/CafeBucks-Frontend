@@ -1,0 +1,98 @@
+ .catalog__main {
+    padding: 1rem;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+ }
+
+ .filter__panel {
+    border: 1px solid #ccc;
+    margin-right: 1rem;
+    width: 18rem;
+ }
+
+ .filter__title {
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+ }
+
+
+ .filter__title h3 {
+    margin: 0 auto 0 .5rem;
+    font-size: 1rem;
+    font-weight: 600;
+ }
+
+ @keyframes filterDisplay {
+   from {width: auto}
+   to {width: 0}
+ }
+
+ .rotate {
+   transform: rotate(180deg);
+ }
+
+ .not__visible {
+   animation-name: filterDisplay;
+   animation-timing-function: ease-in-out;
+   display: none;
+ }
+
+ .filter__content {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    animation-duration: 0.5s;
+ }
+
+ .filter__content-title {
+    display: block;
+    width: 100%;
+    font-weight: 500;
+ }
+
+ .filter__content-options {
+    display: flex;
+ }
+
+ .filter__content-options span {
+    margin-right: auto;
+ }
+
+ .filter__content-title h3 {
+    font-size: 1rem;
+    margin: 0.5rem auto 0.5rem 0;
+ }
+
+ .filter__content-range{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0.5rem 0; 
+   }
+   .filter__content-range select{
+      padding: 2px 4px;
+      margin-left: 0;
+   }
+
+ .content__panel {
+    border: 1px solid #ccc;
+    width: 100%;
+ }
+
+ @media screen and (max-width: 576px) {
+    .catalog__main {
+       flex-direction: column;
+    }
+
+    .content__panel {
+       margin-top: 1rem;
+    }
+
+    .filter__panel {
+       width: 100%;
+    }
+ }

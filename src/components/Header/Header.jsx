@@ -42,7 +42,7 @@ const Header = () => {
                             </motion.li>
                             
                             <motion.li whileHover={{scale: .9}} className='nav__item'>
-                                <NavLink to="/products" className={(navClass) => navClass.isActive ? 'nav__active' : ''}>
+                                <NavLink to="/product" className={(navClass) => navClass.isActive ? 'nav__active' : ''}>
                                     <BsGrid/>
                                     Products
                                 </NavLink>
