@@ -83,6 +83,13 @@
     width: 100%;
  }
 
+ .content__repeater {
+   background: #ddd;
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+ }
+
  @media screen and (max-width: 576px) {
     .catalog__main {
        flex-direction: column;
