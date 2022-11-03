@@ -90,12 +90,13 @@
  .content__panel {
     width: 100%;
     background: white;
-    border-radius: 5px;
+    border-radius: 5px !important;
     box-shadow: 0 2px 3px rgb(0 0 0 / 20%);
  }
 
  .content__sort {
     display: flex;
+    border-radius: 5px 5px 0;
  }
 
  .content__sort div {
@@ -114,6 +115,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 0.5rem;
+    border-radius: 0 0 5px 5px;
  }
 
  @media screen and (max-width: 576px) {
@@ -131,5 +133,9 @@
 
     .content__sort{
       flex-direction: column;
+    }
+
+    .content__sort div:first-of-type {
+      border-radius: 5px 5px 0 0;
     }
  }
