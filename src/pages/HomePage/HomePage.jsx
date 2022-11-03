@@ -7,8 +7,7 @@ import card_cuisine from '../../images/card-cuisine.jpg'
 import card_restaurant from '../../images/card-restaurant.jpg'
 import card_hotdeals from '../../images/card-hotdeals.jpg'
 
-import { HiMapPin, HiOutlineMagnifyingGlass } from 'react-icons/hi2'
-import { FaCaretDown } from 'react-icons/fa'
+import { FaCaretDown, FaMapMarkerAlt,FaSearch } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 
 const HomePage = () => {
@@ -29,14 +28,14 @@ const HomePage = () => {
           <div className="search__container">
             <div className="search__box">
               <div className="search__option">
-                <HiMapPin style={{ color: "red" }} />
+                <FaMapMarkerAlt style={{ color: "red" }} />
                 <input type="text" placeholder='Ayodhya-Faizabad' />
                 <FaCaretDown />
               </div>
               <div className="search__divider"></div>
               <hr className='search_v_divider' />
               <div className="search__text">
-                <HiOutlineMagnifyingGlass />
+                <FaSearch />
                 <input placeholder='Search for Restaurant, cuisine or a dish' />
               </div>
             </div>

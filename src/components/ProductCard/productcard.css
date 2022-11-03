@@ -1,6 +1,7 @@
 .thumb-wrapper {
     padding: 15px 25px;
     width: 15rem;
+    min-width: 15rem;
     background: #fff;
     border-radius: 6px;
     text-align: center;
