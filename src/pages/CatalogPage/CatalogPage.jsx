@@ -94,14 +94,14 @@ const CatalogPage = () => {
           </div>
         </div>
       </div>
-      <div className="content__panel">
-        <section className="content__sort">
+      <div className="catalog__panel">
+        <section className="catalog__sort">
           <div>Newest</div>
           <div>Price High-To-Low</div>
           <div>Price Low-To-High</div>
           <div>Popularity</div>
         </section>
-        <section className="content__repeater">
+        <section className="catalog__repeater">
           {
             products.map(product => (
               <ProductCard

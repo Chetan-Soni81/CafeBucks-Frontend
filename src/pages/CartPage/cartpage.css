@@ -1,0 +1,31 @@
+.cart__content__panel {
+    display: flex;
+    margin: 1rem auto;
+    box-shadow: none;
+    border-radius: none;
+}
+
+.cart__buy {
+    border: 1px solid #ccc;
+    padding: 1rem 1rem;
+}
+
+.cart__buy h3 {
+    font-size: 1.2rem;
+}
+
+.cart__buy button {
+    width: 100%;
+    padding: 0.5rem 2rem;
+    background-color: #FF884B;
+    color: white;
+    border: none;;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 700;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%)
+}
+
+.cart__buy button:hover {
+    opacity: 0.8;
+}

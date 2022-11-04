@@ -32,16 +32,16 @@ const Footer = (props) => {
             <Col md='2' lg='2' xl='2' className="footer__col">
               <h6>Products</h6>
               <p>
-                <a href="/">MDBootstrap</a>
+                <a href="/">Burgers</a>
               </p>
               <p>
-                <a href="/" >MDWordPress</a>
+                <a href="/" >Pizzas</a>
               </p>
               <p>
-                <a href="/">BrandFlow</a>
+                <a href="/">Coffee</a>
               </p>
               <p>
-                <a href="/">Bootstrap Angular</a>
+                <a href="/">Ice creames</a>
               </p>
             </Col>
             {/* <!-- Grid column --> */}
@@ -57,10 +57,10 @@ const Footer = (props) => {
                 <a href="/">Your Account</a>
               </p>
               <p>
-                <a href="/">Become an Affiliate</a>
+                <a href="/">Admin</a>
               </p>
               <p>
-                <a href="/">Shipping Rates</a>
+                <a href="/">Hot Deals</a>
               </p>
               <p>
                 <a href="/">Help</a>
@@ -73,10 +73,10 @@ const Footer = (props) => {
             {/* <!-- Grid column --> */}
             <Col md='4' lg='3' xl='3' className="footer__col">
               <h6 className="text-uppercase mb-4 font-weight-bold">Contact</h6>
-              <p className='d-flex align-items-center'><FaHome className="me-3" /> New York, NY 10012, US</p>
-              <p className='d-flex align-items-center'><FaEnvelope className='me-3' /> info@gmail.com</p>
-              <p className='d-flex align-items-center'><FaPhone className='me-3' /> + 01 234 567 88</p>
-              <p className='d-flex align-items-center'><FaPrint className='me-3' /> + 01 234 567 89</p>
+              <p className='d-flex align-items-center'><FaHome className="me-3" /> Ayodhya, UP 224001, India</p>
+              <p className='d-flex align-items-center'><FaEnvelope className='me-3' /> info@cafebucks.com</p>
+              <p className='d-flex align-items-center'><FaPhone className='me-3' /> + 91 01 234 567 88</p>
+              <p className='d-flex align-items-center'><FaPrint className='me-3' /> + 91 01 234 567 89</p>
             </Col>
             {/* <!-- Grid column --> */}
           </div>
@@ -93,9 +93,9 @@ const Footer = (props) => {
             <div className="col-md-7 col-lg-8 text-center text-md-start">
               {/* <!-- Copyright --> */}
               <div className="p-3">
-                © 2020 Copyright:
+                © 2022 Copyright:
                 <a href="https://mdbootstrap.com/" className='text-white ms-1'
-                >MDBootstrap.com</a
+                >www.Cafebucks.com</a
                 >
               </div>
               {/* <!-- Copyright --> */}
