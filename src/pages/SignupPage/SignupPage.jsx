@@ -32,7 +32,7 @@ const SignupPage = () => {
 
       const res = await UserServices.createUser(user);
 
-      if(res.status == 200){
+      if(res.status === 200){
         toast.success('Account Created Successful')
         navigate('/login')
       }
