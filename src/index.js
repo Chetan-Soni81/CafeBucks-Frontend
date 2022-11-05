@@ -4,13 +4,26 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import store from './redux/store';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import "react-toastify/dist/ReactToastify.css"
 import { BrowserRouter as Router } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { ToastContainer } from 'react-toastify'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router>
-    <App />
+    <Provider store={store}>
+      <ToastContainer
+        position="top-right"
+        theme="light"
+        autoClose={3000}
+        closeOnClick
+        pauseOnHover={false}
+      />
+      <App />
+    </Provider>
   </Router>
 );
 

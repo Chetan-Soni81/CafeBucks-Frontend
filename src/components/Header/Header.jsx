@@ -56,9 +56,9 @@ const Header = () => {
                             </motion.li>
 
                             <motion.li whileHover={{ scale: .9 }} className='nav__item dropdown'>
-                                <span className={(navClass) => navClass.isActive ? 'nav__active' : ''}>
+                                <span>
                                     <BsPersonCircle />
-                                    <div class="dropdown-content">
+                                    <div className="dropdown-content">
                                         <Link to="/login">Login/Signup</Link>
                                         <Link to="/order">Orders</Link>
                                         <Link to="">Account Settings</Link>
