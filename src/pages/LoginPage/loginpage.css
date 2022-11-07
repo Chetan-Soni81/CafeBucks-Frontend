@@ -14,6 +14,10 @@
     border-radius: 5px;
 }
 
+.form__panel form div {
+    margin-bottom: 1rem;
+}
+
 .form__panel button, .form__panel input {
     border-radius: 0;
 }

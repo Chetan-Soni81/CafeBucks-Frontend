@@ -1,6 +1,7 @@
 import React from 'react'
 import './footer.css'
 
+import { Link } from 'react-router-dom'
 import { Col } from 'reactstrap'
 import { FaHome, FaPhone, FaEnvelope, FaPrint, FaFacebookF, FaTwitter, FaInstagram, FaGoogle } from 'react-icons/fa'
 
@@ -57,7 +58,7 @@ const Footer = (props) => {
                 <a href="/">Your Account</a>
               </p>
               <p>
-                <a href="/">Admin</a>
+                <Link to="/admin">Admin</Link>
               </p>
               <p>
                 <a href="/">Hot Deals</a>

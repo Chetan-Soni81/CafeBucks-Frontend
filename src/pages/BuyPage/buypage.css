@@ -75,3 +75,9 @@
     text-align: justify;
     text-justify: inter-word;
 }
+
+@media only screen and (max-width: 768px) {
+    .product__desc {
+        padding-top: 1rem;
+    }
+}

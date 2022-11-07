@@ -7,6 +7,8 @@ import SignupPage from '../pages/SignupPage/SignupPage';
 import CatalogPage from '../pages/CatalogPage/CatalogPage';
 import CartPage from '../pages/CartPage/CartPage';
 import BuyPage from '../pages/BuyPage/BuyPage';
+import AdminLoginPage from '../pages/AdminLoginPage/AdminLoginPage';
+import AdminCategoriesPage from '../pages/AdminCategoriesPage/AdminCategoriesPage';
 
 
 const Routers = () => {
@@ -21,6 +23,10 @@ const Routers = () => {
         <Route path=":id" element={<BuyPage/>}/>  
       </Route>
       <Route path='/cart' element={<CartPage/>}/>
+      <Route path='admin'>
+        <Route path='' element={<AdminLoginPage/>}/>
+        <Route path='category' element={<AdminCategoriesPage/>}/>
+      </Route>
     </Routes>
   )
 }
