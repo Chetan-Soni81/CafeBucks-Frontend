@@ -9,6 +9,7 @@ import CartPage from '../pages/CartPage/CartPage';
 import BuyPage from '../pages/BuyPage/BuyPage';
 import AdminLoginPage from '../pages/AdminLoginPage/AdminLoginPage';
 import AdminCategoriesPage from '../pages/AdminCategoriesPage/AdminCategoriesPage';
+import AdminProductPage from '../pages/AdminProductPage/AdminProductPage';
 
 
 const Routers = () => {
@@ -26,6 +27,7 @@ const Routers = () => {
       <Route path='admin'>
         <Route path='' element={<AdminLoginPage/>}/>
         <Route path='category' element={<AdminCategoriesPage/>}/>
+        <Route path='product' element={<AdminProductPage/>}/>
       </Route>
     </Routes>
   )

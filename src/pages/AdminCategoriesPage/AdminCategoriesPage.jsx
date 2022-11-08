@@ -13,31 +13,51 @@ const AdminCategoriesPage = () => {
         e.preventDefault();
 
         try {
+             const res = await AdminServices.addCategory({categoryName});
 
+             if(res.status === 201) {
+                toast.success(res.data.message)
+                getCategory()
+                setCategoryName("")
+             }
         } catch (error) {
+            toast.error(error.response.data.error)
+        }
+    }
 
+    const deleteCategory = async (id) => {
+        try {
+            const res = await AdminServices.deleteCategory(id);
+
+            if( res.status === 200) {
+                toast.success(res.data.message)
+                getCategory()
+            }
+        } catch (error) {
+            toast.error(error.response.data.error)
         }
     }
 
     useEffect(() => {
-        const getCategory = async () => {
-            try {
-                const res = await AdminServices.getCategories()
-
-                if (res.status === 200) {
-                    console.log(res.data);
-                    setCategories(res.data);
-                }
-            } catch (error) {
-                toast.error(error.response.data.message)
-            }
-        }
-
+        
         getCategory()
     }, [])
 
+    const getCategory = async () => {
+        try {
+            const res = await AdminServices.getCategories()
+
+            if (res.status === 200) {
+                console.log(res.data);
+                setCategories(res.data);
+            }
+        } catch (error) {
+            toast.error("Cannot be created")
+        }
+    }
+
     return (
-        <main>
+        <main className='cate__main'>
             <Container>
                 <div className="cate_form_panel">
                     <form onSubmit={insertCategory}>
@@ -60,6 +80,7 @@ const AdminCategoriesPage = () => {
                                 <th>S.no.</th>
                                 <th>Category Id</th>
                                 <th>Category Name</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -69,6 +90,7 @@ const AdminCategoriesPage = () => {
                                         <td>{index + 1}</td>
                                         <td>{item._id}</td>
                                         <td>{item.categoryName}</td>
+                                        <td><button className="delete_btn" onClick={() => deleteCategory(item._id)}>Delete</button><button className="update_btn">Update</button></td>
                                     </tr>
                                 ))
                             }

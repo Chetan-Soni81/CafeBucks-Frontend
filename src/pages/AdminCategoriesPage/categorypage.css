@@ -9,6 +9,17 @@
     border: 1px solid #ccc;
 }
 
+.cate__main button {
+    border:none;
+    outline:none;
+    padding: 0.3rem 1rem;
+    font-weight: 600;
+}
+
+.cate__main button:hover {
+    opacity: 0.8;
+}
+
 .cate_form_panel form {
     width: 100%;
 }
@@ -24,16 +35,19 @@
 
 .add_category{
     width: 100%;
-    border:none;
-    outline:none;
     background: #0aad2d;
     color: white;
-    padding: 0.3rem 1rem;
-    font-weight: 600;
 }
 
-.add_category:hover {
-    opacity: 0.8;
+.delete_btn {
+    background: #ee0000;
+    color: white;
+    margin-right: 0.5rem;
+}
+
+.update_btn {
+    background: #fd0;
+    color: white;
 }
 
 .cate_table_panel {
