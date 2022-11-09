@@ -26,6 +26,7 @@ const AdminLoginPage = () => {
 
             if (res.status === 200) {
                 toast.success('Admin Login Successful')
+                navigate('/admin/dashboard')
             }
 
         } catch (error) {

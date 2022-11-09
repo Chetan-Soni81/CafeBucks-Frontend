@@ -1,0 +1,22 @@
+.admin_dash_main {
+    display: flex;
+}
+
+.side_nav {
+    background: #333;
+    display: flex;
+    align-items: center;
+}
+
+.side_bar_panel{
+    background: #333;
+}
+
+.side_bar_panel li a {
+    padding: 1rem;
+    color: white;
+}
+
+.side_bar_panel li a svg {
+    font-size: 2rem;
+}

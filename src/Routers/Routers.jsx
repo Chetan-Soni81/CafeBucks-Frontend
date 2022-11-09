@@ -10,6 +10,7 @@ import BuyPage from '../pages/BuyPage/BuyPage';
 import AdminLoginPage from '../pages/AdminLoginPage/AdminLoginPage';
 import AdminCategoriesPage from '../pages/AdminCategoriesPage/AdminCategoriesPage';
 import AdminProductPage from '../pages/AdminProductPage/AdminProductPage';
+import AdminDashboardPage from '../pages/AdminDashboard/AdminDashboardPage';
 
 
 const Routers = () => {
@@ -26,6 +27,7 @@ const Routers = () => {
       <Route path='/cart' element={<CartPage/>}/>
       <Route path='admin'>
         <Route path='' element={<AdminLoginPage/>}/>
+        <Route path='dashboard' element={<AdminDashboardPage/>}/>
         <Route path='category' element={<AdminCategoriesPage/>}/>
         <Route path='product' element={<AdminProductPage/>}/>
       </Route>
