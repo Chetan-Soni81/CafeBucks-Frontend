@@ -16,20 +16,22 @@ import AdminDashboardPage from '../pages/AdminDashboard/AdminDashboardPage';
 const Routers = () => {
   return (
     <Routes>
-      <Route path='' element={<Navigate to='/home'/>}/>
-      <Route path='/home' element={<HomePage/>}/>
-      <Route path='/login' element={<LoginPage/>}/>
-      <Route path='/register' element={<SignupPage/>}/>
+      <Route path='' element={<Navigate to='/home' />} />
+      <Route path='/home' element={<HomePage />} />
+      <Route path='/login' element={<LoginPage />} />
+      <Route path='/register' element={<SignupPage />} />
       <Route path='/product'>
-        <Route path=""  element={<CatalogPage/>}/>
-        <Route path=":id" element={<BuyPage/>}/>  
+        <Route path="" element={<CatalogPage />} />
+        <Route path=":id" element={<BuyPage />} />
       </Route>
-      <Route path='/cart' element={<CartPage/>}/>
+      <Route path='/cart' element={<CartPage />} />
       <Route path='admin'>
-        <Route path='' element={<AdminLoginPage/>}/>
-        <Route path='dashboard' element={<AdminDashboardPage/>}/>
-        <Route path='category' element={<AdminCategoriesPage/>}/>
-        <Route path='product' element={<AdminProductPage/>}/>
+        <Route path='' element={<AdminLoginPage />} />
+        <Route path='dashboard' element={<AdminDashboardPage />}>
+          <Route path='home' element={''}/>
+          <Route path='category' element={<AdminCategoriesPage />} />
+          <Route path='product' element={<AdminProductPage />} />
+        </Route>
       </Route>
     </Routes>
   )
