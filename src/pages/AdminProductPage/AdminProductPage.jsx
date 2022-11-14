@@ -4,7 +4,6 @@ import './productpage.css'
 import { Input, Label,FormGroup, Table } from 'reactstrap'
 import AdminServices from '../../services/AdminServices'
 import { toast } from 'react-toastify'
-import { useNavigate} from 'react-router-dom'
 
 const AdminProductPage = () => {
     const [foodName, setFoodName] = useState("")
@@ -151,7 +150,7 @@ const AdminProductPage = () => {
                                         <td>{index +1}</td>
                                         <td>{item.foodName}</td>
                                         <td>₹{item.price}</td>
-                                        <td>{item.category ? item.category.categoryName : "cateogory not found"}</td>
+                                        <td>{item.category ? item.category.categoryName : "category not found"}</td>
                                         <td><img src={`data:image/png;base64,${item.image}`} alt={item._id} width={32}/></td>
                                         <td>{item.about}</td>
                                         <td>

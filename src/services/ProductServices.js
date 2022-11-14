@@ -14,6 +14,7 @@ class ProductService {
     getCategory() {
         return axios.get(API_BASE_URL + 'account/category')
     }
+
 }
 
 export default new ProductService()
